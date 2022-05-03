@@ -49,7 +49,7 @@ public class HttpClient {
     }
 
     //Private Constructor
-    private HttpClient(HttpClientBuilder builder){
+    private HttpClient(HttpClientBuilder builder) {
         this.method = builder.method;
         this.url = builder.url;
         this.userName = builder.userName;
@@ -91,7 +91,7 @@ public class HttpClient {
         }
 
         //build method
-        public HttpClient build(){
+        public HttpClient build() {
             return new HttpClient(this);
         }
     }
